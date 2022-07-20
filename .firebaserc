@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kanban-board-2398b": {
+      "hosting": {
+        "kanban": [
+          "kanban-board-2398b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kanban-board-2398b"
+  }
+}
