@@ -2,9 +2,7 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
         <div class="close-container">
             <span class="headline">KanBan-FaKe</span>
-            <!-- <button mat-icon-button color="alarm" mat-button (click)="drawer.toggle()"> -->
-                <!-- <mat-icon  (click)="drawer.toggle()">arrow_back_ios</mat-icon> -->
-            <!-- </button> -->
+            
             <div class="example-sidenav-content">
                 <button type="button" mat-button (click)="drawer.toggle()">
                     <mat-icon>arrow_back_ios</mat-icon>
@@ -14,14 +12,15 @@
         </div>
 
         <div class="nav-btn-container">
-            <button>Board</button>
-            <button>Backlog</button>
-            <button>Add Task</button>
+            <ul>
+                <li>Board</li>
+                <li>Backlog</li>
+                <li>Add Task</li>
+            </ul>
         </div>
 
         <img src="assets\imgs\logo.png" alt="Logo" class="logo">
     </mat-drawer>
-
 
 </mat-drawer-container>
 

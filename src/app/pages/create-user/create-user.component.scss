@@ -1,0 +1,50 @@
+.main-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formfield-container {
+    position: relative;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #a7c4e21a;
+    box-shadow: -10px -9px 32px -23px rgb(0 151 255 / 30%);
+
+    .header-container {
+        position: absolute;
+        top: 0;
+        color: #3f51b5;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+
+    form {
+        mat-form-field {
+            margin: 12px;
+        }
+
+        .button-container {
+
+            button {
+                position: absolute;
+                bottom: 6px;
+                right: 6px;
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 130px;
+            max-height: 130px;
+            min-height: 80px;
+        }
+    }
+}

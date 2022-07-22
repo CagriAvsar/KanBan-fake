@@ -1,1 +1,71 @@
-<p>create-user works!</p>
+<div class="main-container">
+    <div class="formfield-container">
+
+        <div class="header-container mb-18">
+            <h1>Add Task</h1>
+            <small>Learning Managament System Project</small>
+        </div>
+
+        <form>
+
+            <div class="mb-18 space-btw">
+                <mat-form-field appearance="outline">
+                    <mat-label>Titel</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+
+                <mat-form-field color="accent" appearance="fill">
+                    <mat-label>Custom calendar color</mat-label>
+                    <input matInput [matDatepicker]="picker2">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+            <div class="mb-18 space-btw">
+                <mat-form-field appearance="fill">
+                    <mat-label>Kategorie</mat-label>
+                    <select matNativeControl>
+                        <option value="" selected></option>
+                        <option value="volvo">Management</option>
+                        <option value="saab">Marketing</option>
+                        <option value="mercedes">Designer</option>
+                        <option value="audi">Entwickler</option>
+                    </select>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Dringlichkeit</mat-label>
+                    <select matNativeControl>
+                        <option value="" selected></option>
+                        <option value="volvo">Sehr Hoch</option>
+                        <option value="saab">Hoch</option>
+                        <option value="mercedes">Normal</option>
+                        <option value="audi">Hat Zeit</option>
+                    </select>
+                </mat-form-field>
+            </div>
+
+            <div class="space-btw">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Leave a comment</mat-label>
+                    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                </mat-form-field>
+
+                <div class="test">
+
+                </div>
+
+                <div class="button-container">
+                    <button mat-mini-fab color="primary">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
